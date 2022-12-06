@@ -1,0 +1,334 @@
+//
+//
+//
+//
+//
+// INDEX HEADER
+//
+//
+//
+//
+//
+//
+
+#header__index{
+    height: 100vh;
+    width: 100%;
+    background-image: radial-gradient(circle at top, rgb(31, 31, 31), rgb(5, 5, 5));
+    .navbar-index{
+        z-index: 200;
+        background-color: none;
+        height: 90px;
+        .navbar-brand img{
+            width: 300px;
+        }
+        .nav{
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar-collapse{
+            .nav{
+                gap: 60px;
+                .nav-link{
+                    color: $quaternary__color;
+                    transition: color .4s;
+                    font-size: 19px;
+                    &:hover{
+                        color: $primary__color;
+                    }
+                }
+            }
+            .nav__buttons{
+                display: flex;
+                li{
+                    display: inline-block;
+                    padding: 0 20px;
+                    input{
+                        color: rgb(0, 0, 0);
+                        border: none;
+                        border-radius: 20px;
+                        padding: 10px 25px;
+                        font-size: 15px;
+                        transition: background-color .4s, color .4s;
+                        cursor: pointer;
+                        &:hover{
+                            color: $quaternary__color;
+                            background-color: $primary__color;
+                            box-shadow: 0 0 15px -2px $primary__color;
+                            transition: background-color .4s, color .4s, font-size .4s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #home-link{
+        color: $primary__color;
+    }
+    .container__sure{
+        position: relative;
+        z-index: 100;
+        top: -90px;
+        width: 100%;
+        height: 100vh;
+        background-image: radial-gradient(circle at top, rgb(31, 31, 31), rgb(5, 5, 5));
+        article{
+            position: relative;
+            top: 50%;
+            transform: translate(0,-50%);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            .article__text{
+                h1{
+                    font-size: 70px;
+                    letter-spacing: 5px;
+                    font-weight: bolder;
+                    color: $primary__color;
+                }
+                p{
+                    padding-top: 30px;
+                    width: 400px;
+                    font-size: 25px;
+                    color: rgb(177, 177, 177);
+                    span{
+                        color: $primary__color;
+                    }
+                }
+            }
+            .none{
+                display: none;
+            }
+            .nintendo{
+                width: 650px;
+            }
+        }
+    }
+    .arrow{
+        width: 60px;
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        animation-name: arrow-move;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        animation-iteration-count: infinite;
+        @keyframes arrow-move {
+            0% {
+                bottom: 25px;
+            }
+            30% {
+                bottom: 45px;
+            }
+            100% {
+                bottom: 25px;
+            }
+        }
+    }
+}
+
+//
+//
+//
+//
+//
+// PRODUCTS HEADER
+//
+//
+//
+//
+//
+//
+
+.navbar-products{
+    background-color: $tertiary__color;
+    height: 90px;
+    .navbar-brand{
+        img{
+            width: 300px;
+        }
+    }
+    .navbar-collapse{
+        .nav{
+            gap: 60px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-link{
+                color: $quaternary__color;
+                transition: color .4s;
+                font-size: 19px;
+                &:hover{
+                    color: $primary__color;
+                }
+            }
+            #product-link{
+                color: $primary__color;
+            }
+        }
+        .nav__buttons{
+            display: flex;
+            li{
+                display: inline-block;
+                padding: 0 20px;
+                input{
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 25px;
+                    font-size: 15px;
+                    transition: background-color .4s, color .4s;
+                    cursor: pointer;
+                    &:hover{
+                        color: rgb(255, 255, 255);
+                        background-color: $primary__color;
+                        box-shadow: 0 0 15px -2px $primary__color;
+                        transition: background-color .4s, color .4s, font-size .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//
+//
+//
+//
+// ABOUT US HEADER
+//
+//
+//
+//
+//
+//
+
+.navbar-aboutUs{
+    background-color: $tertiary__color;
+    height: 90px;
+    .navbar-brand{
+        img{
+            width: 300px;
+        }
+    }
+    .navbar-collapse{
+        .nav{
+            gap: 60px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-link{
+                color: $quaternary__color;
+                transition: color .4s;
+                font-size: 19px;
+                &:hover{
+                    color: $primary__color;
+                }
+            }
+            #aboutUs-link{
+                color: $primary__color;
+            }
+        }
+        .nav__buttons{
+            display: flex;
+            li{
+                display: inline-block;
+                padding: 0 20px;
+                input{
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 25px;
+                    font-size: 15px;
+                    transition: background-color .4s, color .4s;
+                    cursor: pointer;
+                    &:hover{
+                        color: $quaternary__color;
+                        background-color: $primary__color;
+                        box-shadow: 0 0 15px -2px $primary__color;
+                        transition: background-color .4s, color .4s, font-size .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//
+//
+//
+//
+//
+// CONTACT HEADER
+//
+//
+//
+//
+//
+//
+
+.navbar-contact{
+    background-color: $tertiary__color;
+    height: 90px;
+    .navbar-brand{
+        img{
+            width: 300px;
+        }
+    }
+    .navbar-collapse{
+        .nav{
+            gap: 60px;
+            width: 100%;
+            height: 90px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav-link{
+                color: $quaternary__color;
+                transition: color .4s;
+                font-size: 19px;
+                &:hover{
+                    color: $primary__color;
+                }
+            }
+            #contact-link{
+                color: $primary__color;
+            }
+        }
+        .nav__buttons{
+            display: flex;
+            li{
+                display: inline-block;
+                padding: 0 20px;
+                input{
+                    color: rgb(0, 0, 0);
+                    border: none;
+                    border-radius: 20px;
+                    padding: 10px 25px;
+                    font-size: 15px;
+                    transition: background-color .4s, color .4s;
+                    cursor: pointer;
+                    &:hover{
+                        color: $quaternary__color;
+                        background-color: $primary__color;
+                        box-shadow: 0 0 15px -2px $primary__color;
+                        transition: background-color .4s, color .4s, font-size .4s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 

@@ -5,29 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cargo Arg Official Store</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
 </head>
 <body>
     <header id="header__index">
-        <nav class="nav">
-            <a href="./index.html"><img src="./img/logo-text.png" alt="logo" class="nav__logo"></a>
-            <ul class="nav__list">
-                <li><a href="./index.html" class="home">Home</a></li>
-                <li><a href="./pages/products.html" class="list__items">Products</a></li>
-                <li><a href="./pages/aboutUs.html" class="list__items">About us</a></li>
-                <li><a href="./pages/contact.html" class="list__items">Contact</a></li>
-            </ul>
-            <div class="nav__buttons">
-                <li><input type="button" value="Sign Up"></li>
-                <li><input type="button" value="Login"></li>
+        <nav class="navbar navbar-index navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../img/logo-text.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav justify-content-center">
+                  <li class="nav-item">
+                    <a id="home-link" class="nav-link home-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/products.html">Products</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/aboutUs.html">
+                      About Us
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html">Contact</a>
+                  </li>
+                </ul>
+                <div class="nav__buttons">
+                    <li><input type="button" value="Sign Up"></li>
+                    <li><input type="button" value="Login"></li>
+                </div>
+              </div>
             </div>
-        </nav>
+          </nav>
         <section class="container__sure">
             <article>
+                <p class="none">.</p>
                 <div class="article__text">
-                    <h1 class="">100% SURE</h1>
+                    <h1 class="title__header">100% SURE</h1>
                     <p>Whatever you want, from any brand from the <span>USA</span>, straight to your door in less than <span>7 days</span>.<br> Buy all kinds of products from your home.</p>
                 </div>
                 <img src="./img/nintendo.png" alt="Nintendo Switch" class="nintendo">
@@ -35,7 +53,7 @@
         </section>
         <img src="./img/flecha.png" alt="flecha" class="arrow">
     </header>
-    <main>
+    <main class="index-main">
         <section class="container__tracking">
             <article class="tracking__description">
                 <h3>Tracking</h3>
@@ -50,22 +68,23 @@
         <hr class="hr__tracking-products">
         <section class="container__offer">
             <article class="product__offer">
-                <div class="offer__box">
-                    <a href="./pages/buyProduct.html"><div class="offer__image">
-                        <img class="airPodsMax" src="./img/Products/AirPods-Max.png" alt="AirPods Max">
-                    </div></a>
+                <div class="offer__image">
+                    <a href="./pages/buyProduct.html"><img class="airPodsMax" src="./img/Products/AirPods-Max.png" alt="AirPods Max"></a>
+                </div>
+                <div class="block__offer-main">
                     <div class="block__offer">
                         <div class="container__offer__text">
                             <div class="container__text">
                                 <h3 class="title__text">AirPods Max</h3>
                             </div>
-                            <div class="offer__prices">
-                                <p class="price__strikethrough">$799,99</p>
-                                <p class="price">$549,99</p>
-                                <p class="sale">SALE</p>
-                            </div>
+                        <div class="offer__prices">
+                            <p class="price__strikethrough">$799,99</p>
+                            <p class="price">$549,99</p>
+                            <p class="sale">SALE</p>
                         </div>
-                        <div class="offer__inputs">
+                    </div>
+                    <div class="offer__inputs">
+                        <div class="block__color-amount">
                             <div class="block__color">
                                 <label for="color" class="color__text">Color</label>
                                 <select name="color" id="menu__color">
@@ -75,14 +94,16 @@
                                     <option value="color-green">Green</option>
                                 </select>
                             </div>
-                            
                             <div class="block__amount">
                                 <label for="amount" class="amount__text">Amount</label>
                                 <input id="amount" type="number" value="1" min="1">
                             </div>
-                                <a class="buttons" href="#"><input id="button-cart" type="button" value="Add to cart"></a>
-                                <a class="buttons" href="./pages/buyProduct.html"><input id="button-buy" type="button" value="Buy"></a>
                         </div>
+                        <div class="buttons-box">
+                            <a class="buttons" href="#"><input id="button-cart" type="button" value="Add to cart"></a>
+                            <a class="buttons" href="./pages/buyProduct.html"><input id="button-buy" type="button" value="Buy"></a>
+                        </div>
+                    </div>
                 </div>
             </article>
         </section>
@@ -105,11 +126,12 @@
                 <a href="./pages/privacyPolicies.html">Privacy policies</a>
                 <a href="./pages/returnPolicy.html">Return policy</a>
             </div>
-            
         </section> 
         <div class="block__copyright">
             <p class="copyright">©2022, Cargo Arg</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </body>
 </html>
